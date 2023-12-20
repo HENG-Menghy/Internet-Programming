@@ -1,22 +1,18 @@
 <template>
-  <div id="myId">
-    <h1>{{ message }}</h1>
-  </div>
+    <div class="wrapper">
+        <category-component/>
+        <promotion-component/>
+    </div>
 </template>
 
-<script>
-  export default {
-    data() {
-      return {
-        message: 'Let say `Hello Vue`!'
-      }
-    }
-  }
-</script>
+<script></script>
 
 <style scoped>
-  #myId{
-    text-align: center;
-    margin-top: 50px;
-  }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
 </style>
